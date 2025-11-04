@@ -2,7 +2,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo import MongoClient
 import os
 
-DATABASE_URL = os.getenv("DATABASE_URL", "mongodb://localhost:27017/fastapi_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "mongodb://localhost:27018/fastapi_db")
 DATABASE_NAME = os.getenv("MONGO_DB", "fastapi_db")
 
 # Async client for FastAPI
