@@ -18,7 +18,7 @@ services:
   api:
     build: .
     ports:
-      - "8000:8000"
+      - "8001:8001"
     environment:
       DATABASE_URL: mongodb://db:27017/${MONGO_DB:-fastapi_db}
       SECRET_KEY: ${SECRET_KEY:-your-secret-key-change-in-production}
@@ -30,7 +30,7 @@ services:
         condition: service_healthy
     volumes:
       - .:/app
-    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn main:app --host 0.0.0.0 --port 8001 --reload
 
 volumes:
   mongo_data:

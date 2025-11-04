@@ -30,9 +30,9 @@ BE/
 docker-compose up --build
 ```
 
-2. API sẽ chạy tại: `http://localhost:8000`
+2. API sẽ chạy tại: `http://localhost:8001`
 
-3. API Documentation: `http://localhost:8000/docs`
+3. API Documentation: `http://localhost:8001/docs`
 
 ### Chạy local (không dùng Docker)
 
