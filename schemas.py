@@ -33,6 +33,19 @@ class GroqChatResponse(BaseModel):
     model_name: str
     response: str
 
+# Summary Report Schemas
+class SummarySection(BaseModel):
+    title: str
+    content: str
+    points: list[str]
+
+class SummaryReport(BaseModel):
+    executive_summary: str
+    key_points: list[str]
+    sections: list[SummarySection]
+    conclusions: str
+    recommendations: list[str]
+
 # Workspace Schemas
 class WorkspaceCreate(BaseModel):
     name: str
